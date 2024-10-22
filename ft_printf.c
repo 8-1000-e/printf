@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: edubois- <edubois-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: edubois- <edubois-@student.42angouleme>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 07:25:40 by edubois-          #+#    #+#             */
-/*   Updated: 2024/10/22 23:02:44 by edubois-         ###   ########.fr       */
+/*   Updated: 2024/10/22 23:47:05 by edubois-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,8 @@ int	ft_printf(const char *argv, ...)
 	va_list	lst;
 	char	*av;
 
+	if (!argv)
+		return (-1);
 	len = 0;
 	result = 0;
 	va_start(lst, argv);
